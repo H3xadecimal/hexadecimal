@@ -32,6 +32,28 @@ p {
     padding: 0;
 }
 
+.ie-notif {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+    text-align: center;
+}
+
+.ie-notif * {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.ie-notif h1 {
+    font-size: 50px;
+}
+
+.ie-notif p {
+    font-size: 25px;
+}
+
 /*
   ~~ Header and Nav-bar ~~
 */

@@ -1,17 +1,15 @@
-function loadContent(href) {
+function loadContent(href, ex) {
     load('only-load', href);
 
-   let links = document.getElementsByClassName('header')[0].getElementsByTagName('ul')[0].getElementsByTagName('a');
+    let links = document.getElementsByClassName('header')[0].getElementsByTagName('ul')[0].getElementsByTagName('a');
 
-   for (var i in links) {
-       let link = links[i];
+    for (var i in links) {
+        let link = links[i];
 
-       if (link.href === '#') {
-           link.className = '';
-       } else if (link.href === href) {
-           link.className = 'current';
-       }
+        link.className = '';
    }
+
+   Array.from(links).filter(e => e.href === href)[0].className = 'current';
 }
 
 function load(div, url) {
@@ -33,7 +31,7 @@ function load(div, url) {
     request.send();
 }
 
-if (window.history) {
+if (window.history && location.protocol !== 'file:') {
     var links = document.getElementsByClassName('header')[0].getElementsByTagName('ul')[0].getElementsByTagName('a');
 
     for (var i in links) {

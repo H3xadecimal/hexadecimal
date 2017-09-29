@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400|Montserrat:400,700");
-@import url("../assets/Streamster.ttf");
+
+@font-face {
+    font-family: Streamster;
+    src: url("../assets/Streamster.ttf") format('truetype');
+}
 
 * {
     -webkit-touch-callout: none;
@@ -17,7 +21,7 @@
     left: 0;
     object-fit: cover;
     z-index: -1;
-}
+  }
 .copyright {
     font-family: Montserrat, Muli, Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -44,7 +48,6 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-
     -webkit-animation: fadein 3s;
 
 }

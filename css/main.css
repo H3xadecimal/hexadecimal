@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400|Montserrat:400,700");
-
-@font-face {
-    font-family: 'Streamster';
-    src: url('assets/Streamster.ttf') format('truetype')
-}
+@import url("../assets/Streamster.ttf");
 
 * {
     -webkit-touch-callout: none;
@@ -48,6 +44,7 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
+
     -webkit-animation: fadein 3s;
 
 }

@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400|Montserrat:400,700");
 @import url("*/assets/Streamster.ttf");
 
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .bg {
     width: 100%;
     height: 100%;
@@ -10,9 +17,7 @@
     left: 0;
     object-fit: cover;
     z-index: -1;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
-  }
+}
 .copyright {
     font-family: Montserrat, Muli, Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -23,8 +28,6 @@
     color: white;
     text-shadow: 0 0 15px #000;
     transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
 }
 .copyright:hover {
     opacity: 1;
@@ -41,7 +44,6 @@
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -webkit-user-select: none;
     -webkit-animation: fadein 3s;
 
 }
